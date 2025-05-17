@@ -1,0 +1,850 @@
+
+@font-face {
+    font-family: light;
+    src: url(./AeonikTRIAL-Light.otf);
+}
+@font-face {
+    font-family: medium;
+    src: url(.//AeonikTRIAL-Regular.otf);
+}
+
+@font-face {
+    font-family: bold;
+    src: url(./AeonikTRIAL-Bold.otf);
+}
+:root{
+    --one:#e3cd05;
+    --two:#0D1B2A;
+    --three:#9cc4fb;
+    --four:#2081ff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html,body{
+ height:100%;
+ width:100%;
+color:var(--three);
+}
+
+main{
+    width: 100%;
+    height: 100%;
+     background-color: var(--four);
+    font-family: medium;
+    
+    
+}
+
+
+section.allelems{
+    width: 100%;
+    height: 100%;
+      
+     
+    padding: 10px 40px 40px 40px;
+    position: absolute;
+}
+.allelems header{
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+background:url(https://plus.unsplash.com/premium_photo-1711742611414-5c26139e09cb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+background-size: cover;
+background-position: center;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 90px;
+  color: white;
+}
+
+header .header1 h1{
+ font-size: 70px;
+}
+header .header1 h2{
+ font-size: 30px;
+}
+header .header1 h4{
+ font-size: 50px;
+ font-weight: 300;
+}
+
+header .header2 h2{
+ font-size: 60px;
+}
+header .header2 h4{
+ font-size: 30px;
+}
+header .header2 h3{
+ font-size: 15px;
+ margin-top: 5px;
+ text-transform: capitalize;
+ font-weight: 400;
+}
+
+
+.allelems .allfeatures{
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+       gap:34px;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
+.elem{
+    background-color: var(--two);
+   font-size: 30px;
+   text-transform: capitalize;
+    height: 400px;
+    width: 264px;
+    border-radius: 10px;
+    
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all ease 0.25s;
+    -o-transition: all ease 0.25s;
+    transition: all ease 0.25s;
+    cursor: pointer;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    img{
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+    }
+    h2{
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+      color: rgba(255, 255, 255, 0.942);
+        mix-blend-mode:luminosity;
+       
+    }
+}
+.elem:active{
+    scale: 0.97;
+}
+
+.fullelem{
+    width: 100%;
+    height: 110%;
+    background-color: var(--four);
+
+    padding: 20px;
+    display: none;
+    position: absolute;
+
+
+}
+
+ .back{
+    position: absolute;
+    right: 5%;
+    top:5%;
+    padding: 10px 11px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 30px;
+    border-radius: 20px;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.back:active{
+    scale: 0.86;
+}
+
+
+.todofullpage h2{
+    width: 100%;
+    background-color: #0D1B2A;
+    padding: 2px;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+ font-size: 63px;
+}
+
+.todofullpage .todocontainer{
+    
+    height: 80%;
+    width: 100%;
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+
+}
+
+.todofullpage .todocontainer .addtask{
+
+    width: 33%;
+    height: 100%;
+    background-color: var(--one);
+    border-radius: 30px;
+}
+
+
+.todofullpage .todocontainer .addtask form{
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 30px;
+}
+
+.todocontainer .addtask form #task-input{
+    padding: 15px 25px;
+    width: 100%;
+    font-size: 25px;
+    background-color: var(--two);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+
+.todocontainer .addtask form textarea{
+    padding: 15px 25px;
+    width: 100%;
+    font-size: 25px;
+    background-color: var(--two);
+    color: white;
+    border-radius: 5px;
+    border: none;
+   
+    outline: none;
+    margin-bottom: 10px;
+}
+.todocontainer .addtask form button{
+    padding: 15px 25px;
+    width: 100%;
+    font-size: 25px;
+    background-color: rgb(241, 94, 8);
+    color: white;
+    border-radius: 5px;
+    border: none;
+      font-weight: 700;
+    outline: none;
+    margin-bottom: 20px;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+.todocontainer .addtask form button:active{
+scale: 0.96;
+}
+
+
+.todofullpage .todocontainer .alltask{
+
+    width: 65%;
+    height: 100%;
+    background-color: var(--one);
+    border-radius: 30px;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+     -webkit-box-align: start;
+         -ms-flex-align: start;
+             align-items: flex-start;
+     padding: 30px;
+     overflow: auto;
+}
+
+.task{
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+width: 100%;
+background-color:#411f0b;
+padding: 20px 40px;
+border-radius: 10px;
+margin-bottom: 10px;
+}
+
+.task h5{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+    
+}
+
+.task h5 span{
+    color: white;
+    background-color: red;
+    font-size: 11px;
+    padding: 4px 6px;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+.task h5 span.true{
+    opacity:1;
+}
+.task h5 span.false{
+    opacity:0;
+}
+
+.task button{
+    padding: 10px 20px;
+    background-color: rgb(38, 214, 22);
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    -webkit-transition: all ease 0.2s;
+    -o-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+
+}
+.task .down{
+    padding: 3px 4px;
+    background-color: #2081ff;
+}
+
+
+.task button:active{
+    scale: 0.95;
+}
+
+.mark-imp{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 10px;
+    color: black;
+    width: 100%;
+    padding: 0 1px;
+    margin-bottom: 5px;
+}
+.mark-imp input{
+    scale:1.5;
+}
+.mark-imp label{
+    font-size: 15px;
+}
+
+
+
+
+
+.dailyplannerfullpage h2{
+    width: 100%;
+    background-color: #0D1B2A;
+    background-size: cover;
+    background-position: center;
+    padding: 5px;
+  font-size: 60px;
+  text-align: center;
+  color: white;
+  
+  border-radius: 10px;
+
+}
+.dailyplannerfullpage .day-planner{
+  background-color: #e3cd05;
+  height: 80%;
+  margin-top: 40px;
+width: 100%;
+border-radius: 10px;
+padding: 30px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: start;
+    -ms-flex-align: start;
+        align-items: flex-start;
+-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+overflow: auto;
+scrollbar-width: none;
+}
+.dailyplannerfullpage .day-planner .day-planner-timer{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 49%;
+  margin-bottom: 15px;
+}
+
+.day-planner .day-planner-timer p{
+position: absolute;
+top:10%;
+left: 2%;
+font-size: 18px;
+}
+.day-planner .day-planner-timer h5{
+    position: absolute;
+top:10%;
+right: 2%;
+font-size: 18px;
+}
+.day-planner .day-planner-timer input{
+  padding: 20px 40px;
+  width: 100%;
+  background-color: var(--two);
+  color: white;
+  font-size: 28px;
+  border-radius: 5px;
+  border: none;
+  padding-top: 30px;
+  outline: none;
+}
+
+
+.Motivationalfullpage h3{
+   width: 100%;
+   margin-top: 10px;
+   background-color: #0D1B2A;
+   color: white;
+   font-size: 50px;
+   padding: 10px;
+   text-align: center;
+   border-radius: 30px;
+}
+.Motivationalfullpage .motivation-container{
+  width: 80%;
+ 
+  background-color: #9cc4fb;
+ position: absolute;
+ top: 30%;
+ left: 50%;
+ -webkit-transform: translate(-50% ,-50%);
+     -ms-transform: translate(-50% ,-50%);
+         transform: translate(-50% ,-50%);
+
+border-radius: 50px;
+}
+
+
+
+.Motivationalfullpage .motivation-container .motivation-wrapper{
+    z-index: 10;
+    position: absolute;
+ 
+    width: 100%;
+    
+    background-color: rgb(6, 25, 84);
+        border-radius: 30px;
+        padding: 15px;
+      overflow: hidden;
+}
+
+.motivation1{
+    padding: 10px;
+    background-color: chartreuse;
+    border-radius: 20px;
+    color: black;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.motivation1 h2{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.motivation2{
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+.motivation2 p{
+    font-size: 25px;
+    font-weight: 700;
+    color: #9cc4fb;
+}
+
+.motivation3{
+   
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+
+.motivation3 h2{
+    font-size: 25px;
+    font-weight: 500;
+    text-align: right;
+     padding: 15px;
+    background-color: chartreuse;
+    border-radius: 20px;
+    color: black;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-transform: capitalize;
+}
+
+
+.Motivationalfullpage .motivation-container .motivation-wrapper img{
+    position: absolute;
+    right: 5%;
+    opacity: 0.3;
+     top: 5%;
+     height: 50px;
+}
+
+
+.pomodorofullpage h1{
+    width: 100%;
+    padding: 15px;
+    font-size: 50px;
+    background-color: #0D1B2A;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.pomodorofullpage .pomo-timer{
+    
+
+    position: absolute;
+    top: 50%;
+    left:50%;
+    -webkit-transform: translate(-50% ,-50%);
+        -ms-transform: translate(-50% ,-50%);
+            transform: translate(-50% ,-50%);
+   
+ text-align: center;
+}
+
+.pomo-timer h3{
+    font-size: 150px;
+
+}
+
+.pomo-timer button{
+    background-color: #9cc4fb;
+    color: #0D1B2A;
+    padding:15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+    text-transform: capitalize;
+    -webkit-box-shadow:  5px 5px 0px black;
+            box-shadow:  5px 5px 0px black;
+    -webkit-transition: all ease 0.1s;
+    -o-transition: all ease 0.1s;
+    transition: all ease 0.1s;
+    font-weight: 700;
+}
+.pomo-timer button:active{
+scale:0.98;
+ -webkit-box-shadow:  0px 0px 0px black;
+         box-shadow:  0px 0px 0px black;
+}
+
+.pomodorofullpage .session{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    padding: 14px 30px;
+    border-radius: 30px;
+    background-color: rgb(11, 132, 80);
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+}
+
+
+.goalsfullpage h1{
+    width: 100%;
+    background-color: #0D1B2A;
+    text-align: center;
+    font-size: 60px;
+    padding: 10px;
+    border-radius: 30px;
+}
+.goal-box {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    background-color: rgba(233, 96, 16, 0.902);
+    border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 1.5rem;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.addgoals{
+    width: 50%;
+    height: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.addgoals  h3{
+    text-align:left;
+    font-size: 40px;
+    color: #072442;
+}
+.goal-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 20px;
+}
+
+.goal-form input {
+    width: 500px;
+    height: 70px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  font-size: 2rem;
+  background-color: #e3cd05;
+  -webkit-transition: border 0.3s ease;
+  -o-transition: border 0.3s ease;
+  transition: border 0.3s ease;
+}
+
+.goal-form input:focus {
+  border-color: #090102;
+  outline: none;
+}
+
+.goal-form button {
+  background: #0D1B2A;
+  color: rgb(249, 249, 249);
+  padding: 1.5rem 2rem;
+  font-size: 15px;
+  font-weight: 900;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.goal-form button:hover {
+  background: #0056b3;
+}
+
+.goals-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.8rem;
+}
+
+.goal-item {
+  background: #072442;
+  padding: 1rem 5rem;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+          box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.goal-item.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.goal-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.goal-left input[type="checkbox"] {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ff4d4d;
+  font-size: 1.3rem;
+  cursor: pointer;
+  -webkit-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  padding: 10px;
+}
+
+.delete-btn:hover {
+  color: #cc0000;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: #0D1B2A;
+    margin-bottom: 20px;
+  
+    padding: 10px;
+    border-radius: 10px;
+}
+ nav .nav-in {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0px 10px;
+}
+.nav-in h3{
+    font-size: 30px;
+    font-weight: 500;
+    color: whitesmoke;
+}
+.theme{
+   
+    font-size: 15px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    border: none;
+}
+.theme:active{
+    scale: 0.65;
+}

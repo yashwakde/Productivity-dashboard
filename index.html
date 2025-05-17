@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productivity DashBoard</title>
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="allelems">
+        <nav>
+          <div class="nav-in">
+            <h3>Productivity Dashboard</h3>
+
+            <button class="theme" title="Toggle theme">
+              <i class="ri-sun-line"></i>
+            </button>
+          </div>
+        </nav>
+        <header>
+          <div class="header1">
+            <h2>15 May 2025</h2>
+            <h1>Saturday 1:00:13 pm</h1>
+            <h4>Bhopal</h4>
+          </div>
+          <div class="header2">
+            <h2>20°C</h2>
+            <h3 class="weather">light rain</h3>
+
+            <h3 class="humidity">humidity:10%</h3>
+            <h3 class="wind">wind:49 km/h</h3>
+          </div>
+        </header>
+        <div class="allfeatures">
+          <div class="todo elem" id="0">
+            <img
+              src="https://i.pinimg.com/736x/f5/b0/45/f5b0455abc97dda4c0c3711d221d1dde.jpg"
+              alt="todo image"
+            />
+            <h2>todo</h2>
+          </div>
+          <div class="daily elem" id="1">
+            <img
+              src="https://i.pinimg.com/736x/37/54/58/3754585c6d6b817f168acd54b038ea2d.jpg"
+              alt=""
+            />
+            <h2>daily</h2>
+          </div>
+          <div class="motivation elem" id="2">
+            <img
+              src="https://i.pinimg.com/736x/19/b7/b1/19b7b15d944fc8370be12990edaf760a.jpg"
+              alt=""
+            />
+            <h2>motivation</h2>
+          </div>
+          <div class="pomodoro elem" id="3">
+            <img
+              src="https://i.pinimg.com/736x/ce/a5/16/cea516a18cbdd75d280b1150797a5c77.jpg"
+              alt=""
+            />
+            <h2>pomodoro</h2>
+          </div>
+          <div class="goals elem" id="4">
+            <img
+              src="https://i.pinimg.com/736x/c6/24/e6/c624e63e0cd7dd2375bae3e84e0b691a.jpg"
+              alt=""
+            />
+            <h2>Daily goals</h2>
+          </div>
+        </div>
+      </section>
+      <section class="fullelem todofullpage">
+        <button class="back" id="0" title="Go back">
+          <i class="ri-arrow-left-line"></i>
+        </button>
+        <h2>Your Personalized To-do-list</h2>
+
+        <div class="todocontainer">
+          <div class="addtask">
+            <form>
+              <input
+                id="task-input"
+                type="text"
+                placeholder="Enter your task"
+              />
+              <textarea
+                name=""
+                id=""
+                rows="10"
+                cols="30"
+                placeholder="Enter Details"
+              ></textarea>
+              <div class="mark-imp">
+                <input type="checkbox" name="" id="check" />
+                <label for="check">Mark as Important</label>
+              </div>
+              <button type="submit">Add Task</button>
+            </form>
+          </div>
+          <div class="alltask"></div>
+        </div>
+      </section>
+      <section class="fullelem dailyplannerfullpage">
+        <button class="back" id="1" title="Go back">
+          <i class="ri-arrow-left-line"></i>
+        </button>
+        <h2>Plan your day may be more Productive</h2>
+
+        <div class="day-planner"></div>
+      </section>
+      <section class="fullelem Motivationalfullpage">
+        <button class="back" id="2" title="Go back">
+          <i class="ri-arrow-left-line"></i>
+        </button>
+        <h3>Motivational Quote</h3>
+        <div class="motivation-container">
+          <div class="motivation-wrapper"></div>
+        </div>
+      </section>
+      <section class="fullelem pomodorofullpage">
+        <button class="back" id="3" title="Go back">
+          <i class="ri-arrow-left-line"></i>
+        </button>
+        <h1>Pomodoro Timer</h1>
+        <div class="session">work session</div>
+        <div class="pomo-timer">
+          <h3>25:00</h3>
+          <button class="start-timer">start</button>
+          <button class="pause-timer">pause</button>
+          <button class="reset-timer">reset</button>
+        </div>
+      </section>
+      <section class="fullelem goalsfullpage">
+        <button class="back" id="4" title="Go back">
+          <i class="ri-arrow-left-line"></i>
+        </button>
+        <h1>Daily Goals</h1>
+
+        <div class="goal-box">
+          <div class="addgoals">
+            <h3>Enter your Goal in life</h3>
+            <form id="goal-form" class="goal-form">
+              <input
+                type="text"
+                id="goal-input"
+                placeholder="Enter your goal..."
+                required
+              />
+              <button type="submit"><i class="ri-add-line"></i> Add</button>
+            </form>
+          </div>
+
+          <div class="goals-list" id="goals-list">
+            <!-- Goals will be added here dynamically -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
